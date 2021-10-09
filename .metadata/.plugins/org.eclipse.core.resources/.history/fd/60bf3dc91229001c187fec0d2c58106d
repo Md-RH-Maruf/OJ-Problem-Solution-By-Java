@@ -1,0 +1,39 @@
+package com.challange;
+
+import java.util.Scanner;
+
+class CharacterNode{
+	char value;
+	CharacterNode leftNode;
+	CharacterNode rightNode;
+	
+	public CharacterNode(char value) {
+		this.value = value;
+		this.leftNode = null;
+		this.rightNode = null;
+	}
+}
+
+public class LabelOrderTraversal {
+
+	public void insertLeft(CharacterNode parentNode,char value) {
+		if(parentNode.leftNode != null)
+			parentNode.leftNode = new CharacterNode(value);
+	}
+	
+	public void insertRight(CharacterNode parentNode,char value) {
+		if(parentNode.rightNode != null)
+			parentNode.rightNode = new CharacterNode(value);
+	}
+	
+	public static void main(String args[]) {
+		CharacterNode root;
+		Scanner sc = new Scanner(System.in);
+		int numberOfNode = sc.nextInt();
+		
+		while(numberOfNode>0) {
+			
+		}
+		
+	}
+}

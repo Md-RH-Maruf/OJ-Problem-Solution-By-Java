@@ -1,0 +1,50 @@
+package com.challange;
+
+import java.util.Scanner;
+
+
+public class HeightOfBinaryTree {
+	
+	
+	public static void height(Node root) {
+		if(root != null) {
+			System.out.print(root.data+" ");
+		}
+		if(root.left != null) {
+			height(root.left);
+		}
+		if(root.right != null) {
+			height(root.right);
+		}
+		
+	}
+	
+	public static Node insertNode(Node root,int data) {
+		
+		
+		if(root == null) {
+			return new Node(data);
+		}
+		else if(root.data >= data) {
+			root.left = insertNode(root.left,data);
+		}else {
+			root.right = insertNode(root.right,data);;
+		}
+		return root;
+	}
+	
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		Node root=null;
+		int t = sc.nextInt();
+		while(t-- > 0) {
+			int data = sc.nextInt();
+			root = insertNode(root, data);
+		}
+		sc.close();
+		height(root);
+		
+	}
+	
+}
