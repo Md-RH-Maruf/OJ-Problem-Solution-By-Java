@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class HeightOfBinaryTree {
 	
-	
 	public static int treeHeight(Node root) {
 		
 		if(root == null) {
