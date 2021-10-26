@@ -1,5 +1,0 @@
-INDEX VERSION 1.130+D:\Code\java code\Online Judge\.metadata\.plugins\org.eclipse.jdt.core
-291411179.index
-3323497099.index
-3668387450.index
-2892707590.index
